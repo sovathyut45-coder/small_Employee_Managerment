@@ -65,7 +65,7 @@ public class EmpCotroller {
     // update Emp 
     @PutMapping("/{empid}")
     public EmpEntity UpdateEmp(
-        @PathVariable Long empid ,
+        @PathVariable("empid") Long empid ,
         @RequestBody EmpEntity updateEmp
     ){
         // find emp 
